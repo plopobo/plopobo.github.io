@@ -28,9 +28,9 @@ $pallette: #8cad28 #6c9421 #426b29 #426b29 #214231;
 main {
   @include flex-center();
   width: calc(1920px * (10/9));
-  min-width: calc(50vh * (10/9));
+  min-width: calc(1280vh * (10/9));
   height: 1080px;
-  min-height: 50vh;
+  min-height: 800vh;
   background: nth($pallette, 1);
   box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 10px rgba(0,0,0,0.1);
   position: relative;
@@ -48,21 +48,15 @@ main {
   section {
     width: 500px;
     height: calc(100% / 12);
-    //background: linear-gradient(to right, #00000033 0px, transparent 1px),
-                //linear-gradient(to bottom, #00000033 0px, transparent 1px), 
-                //nth($pallette, 2);
-    //background-size: 2px 2px, 2px 2px, 100%;
     background-image: url("https://raw.githubusercontent.com/plopobo/plopobo.github.io/master/plopobo.png");
     position: absolute;
     top: -10%;
-    //mix-blend-mode: difference;
     &:before {
       content: '®';
       position: absolute;
       right: -10px;
       top: -10px;
       color: nth($pallette, 5); 
-      //mix-blend-mode: luminosity;
       z-index: 1;
     }
     animation: scroll 3s linear forwards; 
